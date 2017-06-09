@@ -1,14 +1,18 @@
 # CountdownApp
 This is a sample project for a countdown timer web application.
 
-This project uses Gulp as javascript task runner to compile and minify SCSS and JS files.
-It doesn't have any Javascript or CSS frameworks.
+This project uses Gulp as javascript task runner to compile and minify SCSS and JS files.<br />
+It doesn't have any Javascript or CSS frameworks.<br />
 Includes Google Fonts : Open Sans.
+## To-do List
+```
+* Rotating the sand clock everytime a new timer is set<br /> 
+```
 
 ## Build Process
 Clone the repository and then:
 
-To install the moudles execute comman below
+To install the modules execute comman below
 ```
 $ npm install
 ```
