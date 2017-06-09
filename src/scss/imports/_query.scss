@@ -1,0 +1,115 @@
+@media (max-width:$smallest-screen-width) {
+    footer .wrapper {
+        margin: 5px auto 0;
+
+        .copyright {
+            float: none
+        }
+
+        .version {
+            float: none;
+            display: block
+        }
+    } 
+    section.body {
+
+        .grid {
+            .circle-btn {
+                margin: 40px auto;
+                width: 100px;
+                height: 80px;
+                font-size: 4em;
+                padding-top: 20px;
+            }
+        }
+    }
+}
+
+@media (max-height:919px) {
+    section.body {
+        .grid {
+            .circle-btn {
+                width: 100px;
+                height: 87px;
+                font-size: 5em;
+                padding-top: 13px;
+                margin: 10px auto;
+
+                .tooltip {
+                    top: -20px;
+                }
+
+                input {
+                    font-size: 0.8em;
+                    top: -5px;
+                    position: relative;
+                }
+            }
+        }
+
+
+        .grid.active {
+            .circle-btn .tooltip {
+                top: -50px;
+            }
+        }
+    }
+
+    .timer-container {
+        font-size: .5em;
+
+        .sand-clock {
+            height: 200px;
+            max-width: 150px;
+            border-width:20px;
+            #sand-clock-bottom {
+                border-bottom: none
+            }
+
+            .white-border, .triangle.background {
+                display: none;
+            }
+
+            .triangle {
+                margin-top: 0;
+                border-width: 50px;
+                border-right-width: 70px;
+            }
+
+            .triangle.left {
+                border-left-width: 70px;
+            }
+
+            .triangle.right {
+                border-right-width: 70px;
+            }
+        }
+
+        #timer-percentage {
+            margin-top: -115px;
+        }
+
+        #timer-show.smaller-text {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media (max-height:670px) {
+    body.expand {
+        background-color: #fff;
+
+        footer {
+            .oval-shape {
+                background-color: #fff;
+            }
+        }
+
+        section.body {
+            opacity: 0;
+        }
+    }
+    footer {
+        position: relative; 
+    }
+}

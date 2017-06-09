@@ -1,0 +1,41 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #141d26;
+    overflow: hidden;
+
+    .oval-shape { 
+        background-color: $background-color;
+    }
+
+    .wrapper {
+        width: 90%;
+        max-width: $wrapper-width-lg - 40;
+        font-size: 1.2em;
+        margin: 15px auto 0;
+        color: #616972;
+
+        .copyright {
+            float: left;
+
+            a {
+                text-decoration: none;
+                color: #91a2b0;
+                border-bottom: 1px dashed #808080;
+                @include transition(color ease-in-out .2s);
+            }
+
+            a:hover {
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+
+        .version {
+            float: right;
+        }
+    }
+}
+

@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Countdown Timer</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+       
+        <div class="rectangle"></div>
+        <div class="oval-shape" id="header-oval-shape"></div>
+       
+        <div class="wrapper ">
+            <img src="images/logo.jpg" />
+            <h1>
+                Countdown Timer
+                <small>
+                    A sample of a countdown app
+                </small>
+            </h1>
+
+            <div class="timer-container">
+                <div class="sand-clock">
+                    <div class="sand" id="sand-clock-top"></div>
+                    <div class="sand" id="sand-clock-bottom"></div>
+
+                    <div class="white-border"></div>
+                    <div class="triangle background left"></div>
+                    <div class="triangle background right"></div>
+                    <div class="triangle left"></div>
+                    <div class="triangle right"></div>
+                    <div class="falling-sands" id="falling-sands"></div>
+                </div> 
+                <div id="timer-percentage"></div> 
+                <div id="timer-show"></div> 
+                <div id="timer-expires-at"></div>
+
+                <div class="timer-buttons" id="timer-finished-buttons">
+                    <button class="btn btn-green" id="set-another-btn">Set another timer</button><br />
+                    <button class="btn btn-red" id="close-btn">Close</button>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+    <section class="body">
+        <div class="grid vline hline">
+            <div class="circle-btn">5</div>
+        </div>
+        <div class="grid hline">
+            <div class="circle-btn">15</div>
+        </div>
+        <div class="grid vline">
+            <div class="circle-btn ">30</div>
+        </div>
+        <div class="grid">
+            <div class="circle-btn" id="custom-timer">
+                <div class="tooltip">
+                    <div class="tooltip-message">Please type a number  between 1 and 1440 mintues</div>
+                    <div class="error-message">Invalid data: value must be a number between 1 and 1440 mintues</div>
+                </div>
+                <input type="text" value="" placeholder="??" id="custom-timer-input" maxlength="4" />
+            </div>
+        </div> 
+
+        <div class="clear"></div> 
+        <button id="start-timer-btn" class="btn btn-green" disabled >Start Timer</button>
+    </section>
+    <footer>
+        <div class="oval-shape"></div>
+        <div class="wrapper">
+            <div class="copyright">Designed & Developed by <a href="mailto:aida.hosseinian@yahoo.com" target="_blank">Aida Hosseinian</a></div>
+            <div class="version">Version 1.0.0</div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="js/main-debug.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.oval-shape {
+    height: inherit;
+    margin-top: -300px;
+    height:350px;
+    width: 150%;
+    @include borderRadius(0px 0px 80% 80%);
+    margin-left: -25%;
+}
+
+.clear{
+    clear:both;
+}
+
+.btn {
+    @include borderRadius(5px);
+    @include transition(all ease-in-out .2s);
+    border: none;
+    padding: 15px;
+    width: 90%;
+    max-width: 250px;
+    cursor: pointer;
+    font-size: 2em;
+    margin-top:10px;
+}
+
+
+.btn.btn-green {
+    background-color: $green-dark-color;
+    color: $green-light-color;
+}
+
+.btn.btn-red {
+    background-color: $red-dark-color;
+    color: $red-light-color;
+}
+
+.btn[disabled] {
+    cursor: not-allowed;
+    background-color: $primary-light-color;
+    color: $primary-dark-color;
+}

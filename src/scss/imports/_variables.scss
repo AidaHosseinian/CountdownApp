@@ -1,0 +1,39 @@
+$background-color: #495561;
+$primary-light-color: #5e6871 ;
+$primary-dark-color: #313d49;
+$green-light-color: #beffcc;
+$green-dark-color: #44c95e;
+$red-light-color: #ffb4b4;
+$red-dark-color: #c13116;
+$sand-color: #ffa200 ;
+
+$wrapper-width-lg: 600px;
+$smallest-screen-width: 380px ;
+
+@mixin borderRadius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+    transform: $transform;
+}
+
+@mixin animation($animation) {
+    -webkit-animation: $animation; /* Safari 4+ */
+    -moz-animation: $animation; /* Fx 5+ */
+    -o-animation: $animation; /* Opera 12+ */
+    animation: $animation; /* IE 10+, Fx 29+ */
+}
