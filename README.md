@@ -5,9 +5,8 @@ This project uses Gulp as javascript task runner to compile and minify SCSS and 
 It doesn't have any Javascript or CSS frameworks.<br />
 Includes Google Fonts : Open Sans.
 ## To-do List
-```
-* Rotating the sand clock everytime a new timer is set<br /> 
-```
+* Rotating the sand clock everytime a new timer is set. 
+
 
 ## Build Process
 Clone the repository and then:
