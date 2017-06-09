@@ -5,7 +5,7 @@ This project uses Gulp as javascript task runner to compile and minify SCSS and 
 It doesn't have any Javascript or CSS frameworks.
 Includes Google Fonts : Open Sans.
 
-## Build Procces
+## Build Process
 Clone the repository and then:
 
 To install the moudles execute comman below
