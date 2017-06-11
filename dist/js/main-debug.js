@@ -4,7 +4,7 @@
 
 
     /* =========== Variables start ===========*/
-    var header = document.getElementsByTagName('body')[0];
+    var body = document.getElementsByTagName('body')[0];
     var timerButtons = document.getElementsByClassName('circle-btn');
     var customTimerInput = document.getElementById('custom-timer-input');
     var sandClockTop = document.getElementById('sand-clock-top');
@@ -137,7 +137,7 @@
     } 
     function startTimerBtnClickHandler() {
         if (selectedTimer !== null){
-            addClass(header, 'expand');
+            addClass(body, 'expand');
             addClass(fallingSands, 'fall');
 
             var minutes = 0;
@@ -159,7 +159,7 @@
         sandClockBottom.style.height = '0px';
 
         timerFinishedButtons.style.display = 'none'; 
-        removeClass(header,'expand');
+        removeClass(body,'expand');
         timerIsActive = false;
     }
     function customTimer_keyDown(e) {
